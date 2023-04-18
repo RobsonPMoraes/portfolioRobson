@@ -156,8 +156,13 @@ i.menu-mobile{
     box-shadow: inset 0 0 .4rem #000;
     color: #fff;
 }
-#sobre{
+#sobre,
+#habilidades{
     height: 100vh;
+}
+.section-bg{
+    /* background-color: rgba(12, 166, 254, .2); */
+    background-color: #3b94c0;
 }
 
 @media (max-width: 1024px){
