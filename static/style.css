@@ -179,7 +179,7 @@ i.menu-mobile{
 #curriculo,
 #portfolio,
 #contato{
-    height: 100vh;
+    min-height: 100vh;
 }
 .section-bg{
     /* background-color: rgba(12, 166, 254, .2); */
@@ -221,4 +221,23 @@ i.menu-mobile{
     border: 2px solid #021124;
     background: #fff;
     border-radius: 50%;
+}
+/* Trabalhando os buttons e os links de menu da página portifolio */
+
+.carousel-control-prev{
+    margin-left: -8rem;
+}
+.carousel-control-next{
+    margin-right: -8rem;
+}
+.carousel-indicators{
+    margin-bottom: -35px;
+}
+@media (max-width: 1860px){
+    .carousel-control-prev{
+        margin-left: 0;
+    }
+    .carousel-control-next{
+        margin-right: 0;
+    }
 }
