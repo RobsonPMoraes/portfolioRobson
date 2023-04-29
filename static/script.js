@@ -33,3 +33,28 @@ Assim, ao encontrar um navItem, ele vai atribuir uma função de adicionar um ev
 Se no body encontrar a classList menu-nav-active (linha 25) ele vai remover essa classe (linha 26) e vai substituir o X pelo menu hamburguer (linha 27).*/ 
 })
 
+// Criando animações do portfólio conforme arrastamos o scroll
+
+// animação 1 (ao descer a tela em Sobre, a foto aparecerá da esquerda para a direita enquanto o texto aparecerá da direita para a esquerda)
+
+const item = document.querySelectorAll("[data-anime");
+
+const animeScroll = () => {
+    // para achar o topo da tela que queremos, criamos uma const windowTop = window.pageYOffset
+
+    const windowTop = window.pageYOffset + window.innerHeight * .7;
+    // console.log(windowTop) // através deste comando, posicionamos a tela onde queremos e com um F5 no console atualiza o topo da tela, no caso da tela Sobre, 796px
+
+    item.forEach(element => {
+        if (windowTop > element.offsetTop){
+            element.classList.add("animate");
+        } else {
+            element.classList.remove("animate");
+        }
+    })
+}
+animeScroll();
+
+window.addEventListener("scroll", () => {
+    animeScroll();
+})
